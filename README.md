@@ -1,20 +1,38 @@
-# Dracula for [Visual Studio Code](http://code.visualstudio.com)
+# Rocketseat Theme unofficial for [Visual Studio Code](http://code.visualstudio.com)
 
 > A dark theme for [Visual Studio Code](http://code.visualstudio.com).
 
-![Screenshot](https://raw.githubusercontent.com/dracula/visual-studio-code/master/screenshot.png)
+![Screenshot](./.github/screenshot.png)
 
-## Install
+## OBS: Este tema irá substituir seu tema Dracula. O processo é reversível.
 
-All instructions can be found at [draculatheme.com/visual-studio-code](https://draculatheme.com/visual-studio-code).
+## Instalação
 
-## Team
+```
+# Clone o repositório e entre na pasta.
+$ git clone https://github.com/flaviohugo14/vscode-theme-rocketseat
+$ cd vscode-theme-rockeseat
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/visual-studio-code/graphs/contributors).
+# Instale as dependências
+$ npm install
 
-[![Derek S.](https://avatars3.githubusercontent.com/u/5240018?v=3&s=70)](https://github.com/dsifford) |
-:---: |
-[Derek S.](https://github.com/dsifford) |
+# Crie o build
+$ npm run build
+
+# Crie uma pasta com o nome 'bin'
+$ mkdir bin
+
+# Crie o arquivo binário do VSCode
+$ npm run package
+
+# Abra seu Vscode e aperte Ctrl/CMD + Shift + P, e procure por 'vsix';
+# Selecione a opção que aparecer e procure o binário na pasta 'bin'.
+```
+
+
+## Voltando para o tema Dracula:
+- Na linha 57 do arquivo `./scripts/generate.js`, substitua `rocketseat.yml` por `dracula.yml`
+- Execute `npm run package` e instale o novo binário por dentro do VSCode.
 
 ## Contributing
 
