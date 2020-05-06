@@ -54,7 +54,7 @@ const transformSoft = (yamlContent, yamlObj) => {
 
 module.exports = async () => {
     const yamlFile = await readFile(
-        join(__dirname, '..', 'src', 'rocketseat.yml'),
+        join(__dirname, '..', 'src', 'draculaPro.yml'),
         'utf-8'
     );
 
